@@ -1,8 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MyFirstASPWebApp.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+
 
 namespace MyFirstASPWebApp.Controllers
 {
@@ -13,7 +15,14 @@ namespace MyFirstASPWebApp.Controllers
             return View();
         }
 
+        [HttpGet]
         public IActionResult FanMail()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult FanMail(FanMailModel model)
         {
             return View();
         }
